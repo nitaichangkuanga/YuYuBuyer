@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_selectCity_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_mainshop_h"
+        android:background="@color/colorMainTitle"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择城市"
+            android:textSize="@dimen/tv_shop_name"
+            android:textColor="@color/colorMain"
+            android:layout_centerInParent="true"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_select_cancleRl"
+            android:layout_width="@dimen/free_w"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_color_selector"
+                android:textSize="@dimen/tv_shop_size"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_selectCity_emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据"
+        android:textColor="@color/colordistance"
+        android:visibility="gone"
+        android:textSize="16sp" />
+
+
+    <ProgressBar
+        android:id="@+id/pb_selectCityLoading_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+<ListView
+    android:layout_below="@id/rl_selectCity_rl"
+    android:id="@+id/lv_select_listView"
+    android:cacheColorHint="#00000000"
+    android:dividerHeight="0dp"
+    android:fadingEdge="none"
+    android:scrollbarStyle="outsideOverlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</RelativeLayout>

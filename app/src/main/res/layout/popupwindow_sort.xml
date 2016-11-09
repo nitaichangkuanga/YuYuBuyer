@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorMain"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_popSort_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+
+        <ImageView
+            android:id="@+id/iv_sort_gradeGou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ll_guide_h"
+            android:layout_marginRight="@dimen/et_reg"
+            android:visibility="invisible"
+            android:src="@mipmap/gou"
+            />
+
+        <TextView
+            android:id="@+id/tv_sort_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xingji"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            android:clickable="true"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/colornewsline"
+        />
+    <LinearLayout
+        android:id="@+id/ll_popSort_xin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+
+        <ImageView
+            android:id="@+id/iv_sort_xinGou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ll_guide_h"
+            android:layout_marginRight="@dimen/et_reg"
+            android:src="@mipmap/gou"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_sort_xin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/credit"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            android:clickable="true"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/colornewsline"
+        />
+    <LinearLayout
+        android:id="@+id/ll_popSort_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+
+        <ImageView
+            android:id="@+id/iv_sort_distanceGou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ll_guide_h"
+            android:layout_marginRight="@dimen/et_reg"
+            android:src="@mipmap/gou"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_sort_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            android:clickable="true"
+            />
+    </LinearLayout>
+</LinearLayout>

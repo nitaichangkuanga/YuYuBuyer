@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_waitEvaluateOrderDetails_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:padding="@dimen/tv_shop_med"
+        >
+
+        <TextView
+            android:id="@+id/tv_waitEvaluateOrderDetails_t"
+            style="@style/commonOrderDetailsStyle"
+            android:layout_centerVertical="true"
+            android:text="通话时间"
+            />
+
+        <TextView
+            android:id="@+id/tv_waitEvaluateOrderDetails_callTime"
+            style="@style/commonBlackStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2016-11-01 11:25:00"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_waitEvaluateOrderDetails_three"
+        android:layout_below="@id/rl_waitEvaluateOrderDetails_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:paddingLeft="@dimen/tv_shop_med"
+        android:paddingRight="@dimen/tv_shop_med"
+        >
+
+        <TextView
+            android:id="@+id/tv_waitEvaluateOrderDetails_tv"
+            style="@style/commonOrderDetailsStyle"
+            android:layout_centerVertical="true"
+            android:text="通话时长"
+            />
+
+        <TextView
+            android:id="@+id/tv_waitEvaluateOrderDetails_time"
+            style="@style/commonBlackStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2小时"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_waitEvaluateOrderDetails_four"
+        android:layout_below="@id/rl_waitEvaluateOrderDetails_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:padding="@dimen/tv_shop_med"
+        >
+
+        <TextView
+            android:id="@+id/tv_waitEvaluateOrderDetails_num"
+            style="@style/commonOrderDetailsStyle"
+            android:layout_centerVertical="true"
+            android:text="消费金额"
+            />
+
+        <TextView
+            android:id="@+id/tv_waitEvaluateOrderDetails_bankCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="￥100"
+            android:textColor="@color/colorOrder"
+            android:textSize="@dimen/tv_shop_size"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_waitEvaluate_linefree"
+        android:layout_below="@id/rl_waitEvaluateOrderDetails_four"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xiangsu"
+        android:background="@color/colornewsline"
+        />
+</RelativeLayout>

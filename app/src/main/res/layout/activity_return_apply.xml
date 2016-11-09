@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <RelativeLayout
+        android:id="@+id/rl_returnApply_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_mainshop_h"
+        android:background="@color/colorMainTitle"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_returnApply_back"
+            android:layout_width="@dimen/click_login_top"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/tv_shop_marleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_selector"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款申请"
+            android:textSize="@dimen/tv_shop_name"
+            android:textColor="@color/colorMain"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_returnApply_emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据(点我刷新)"
+        android:textColor="@color/colordistance"
+        android:visibility="gone"
+        android:textSize="18sp" />
+    <ProgressBar
+        android:id="@+id/pb_returnApplyLoading_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+<include
+    layout="@layout/common_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/rl_returnApply_rl"
+    />
+</RelativeLayout>

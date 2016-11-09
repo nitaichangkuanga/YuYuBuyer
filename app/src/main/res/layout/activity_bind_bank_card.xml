@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_bindbnak_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_mainshop_h"
+        android:background="@color/colorMainTitle"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_bank_back"
+            android:layout_width="@dimen/click_login_top"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/tv_shop_marleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_selector"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡绑定"
+            android:textSize="@dimen/tv_shop_name"
+            android:textColor="@color/colorMain"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/bindBank_listView"
+        android:layout_below="@id/rl_bindbnak_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:cacheColorHint="#00000000"
+        />
+    <ProgressBar
+        android:id="@+id/pb_bindbank_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

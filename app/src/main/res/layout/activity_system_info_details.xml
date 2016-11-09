@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_mainshop_h"
+        android:background="@color/colorMainTitle"
+        >
+    <RelativeLayout
+        android:id="@+id/rl_systemInfoDetails_back"
+        android:layout_width="@dimen/click_login_top"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/tv_shop_marleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_selector"
+            />
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tv_main_qu"
+        android:background="@color/colorMain"
+        >
+        <TextView
+            android:id="@+id/tv_sysytemInfoDetails_content"
+            android:layout_marginLeft="@dimen/tv_shop_mar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorroruserin"
+            android:textSize="@dimen/tv_shop_size"
+            android:layout_marginBottom="@dimen/iv_personal_h"
+            />
+
+        <TextView
+            android:id="@+id/tv_sysytemInfoDetails_dateAndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sysytemInfoDetails_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorroruserin"
+            android:textSize="@dimen/tv_shop_s"
+            android:singleLine="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/pb_systemDetails_loading"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</LinearLayout>

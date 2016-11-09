@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="@dimen/tv_main_qu"
+        android:layout_marginBottom="@dimen/tv_main_qu"
+        android:layout_marginRight="@dimen/tv_main_qu"
+        >
+
+        <ImageView
+            android:id="@+id/iv_chat_rightHeadImg"
+            android:layout_width="55dp"
+            android:layout_height="62dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:background="@mipmap/zanwutupian"
+            />
+
+        <TextView
+            android:id="@+id/iv_chat_rightContent"
+            android:layout_toLeftOf="@id/iv_chat_rightHeadImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            android:background="@drawable/right"
+            android:text="你你好你好你你你好你好你好你好你好好你你好你好你好你好你好好你你好你好你好你好你好好你你好你好你好你好你好好好你好你好好"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="18dp"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="@dimen/iv_personal_h"
+            android:gravity="center_vertical"
+            />
+    </RelativeLayout>
+</LinearLayout>

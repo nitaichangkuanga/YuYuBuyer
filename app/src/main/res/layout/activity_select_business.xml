@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_mainshop_h"
+        android:background="@color/colorMainTitle"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_selectBusiness_back"
+            android:layout_width="@dimen/click_login_top"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/tv_shop_marleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_selector"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择商圈"
+            android:textSize="@dimen/tv_shop_name"
+            android:textColor="@color/colorMain"
+            android:layout_centerInParent="true"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_selectBusiness_cancle"
+            android:layout_width="@dimen/free_w"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_color_selector"
+                android:textSize="@dimen/tv_shop_size"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_selectBusiness_emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据"
+        android:textColor="@color/colordistance"
+        android:visibility="gone"
+        android:textSize="16sp" />
+
+
+    <ProgressBar
+        android:id="@+id/pb_selectBusinessLoading_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+    <ListView
+        android:id="@+id/lv_selectBusiness"
+        android:layout_below="@id/rl_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        />
+
+</RelativeLayout>

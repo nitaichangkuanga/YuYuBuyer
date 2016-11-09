@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_mainbuyer_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_mainshop_h"
+        android:background="@color/colorMainTitle"
+        >
+
+        <TextView
+            android:id="@+id/tv_buyer_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tv_shop_marleft"
+            android:clickable="true"
+            android:drawablePadding="@dimen/tv_shop_martop"
+            android:drawableRight="@mipmap/arrow"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_buyer_business"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tv_shop_marleft"
+            android:layout_toRightOf="@id/tv_buyer_city"
+            android:clickable="true"
+            android:drawablePadding="@dimen/tv_shop_martop"
+            android:drawableRight="@mipmap/arrow"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:id="@+id/tv_buyer_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:drawablePadding="@dimen/tv_shop_martop"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:text="@string/xuanze"
+                android:textColor="@color/text_color_selector"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:id="@+id/tv_buyer_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/tv_shop_mar"
+                android:layout_marginRight="@dimen/tv_shop_marleft"
+                android:layout_toRightOf="@id/tv_buyer_choice"
+                android:clickable="true"
+                android:drawablePadding="@dimen/tv_shop_martop"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:text="@string/sort"
+                android:textColor="@color/text_color_selector"
+                android:textSize="@dimen/tv_shop_size"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_mainbuyer_emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据"
+        android:visibility="gone"
+        android:textColor="@color/colordistance"
+        android:textSize="18sp" />
+
+    <com.wushuikeji.www.yuyubuyer.view.CircularProgress
+        android:id="@+id/pb_loading_BuyerProgressBar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:borderWidth="5dp"
+        />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:layout_below="@id/rl_mainbuyer_ll"
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:visibility="gone"
+        android:id="@+id/in_mainbuyer_pf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <ListView
+            android:id="@+id/mainBuyerFragment_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:scrollbarStyle="outsideOverlay"
+            android:cacheColorHint="#00000000"
+            android:scrollbarThumbVertical="@mipmap/ui_shuxian"
+            />
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</RelativeLayout>

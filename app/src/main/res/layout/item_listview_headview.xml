@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:orientation="vertical"
+              android:descendantFocusability="blocksDescendants"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_shopDetails_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        />
+    <LinearLayout
+        android:id="@+id/ll_shopDetails_pointLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/vp_shopDetails_ViewPager"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal"
+        />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tv_shop_marleft"
+        android:background="@color/colorMain"
+        >
+        <ImageView
+            android:id="@+id/iv_shopDetails_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/shop_shop"
+            />
+
+        <TextView
+            android:id="@+id/tv_shopDetails_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tv_main_qu"
+            android:layout_toRightOf="@id/iv_shopDetails_type"
+            android:text="@string/item_shop_shopname"
+            android:textColor="@color/colorshopname"
+            android:textSize="@dimen/tv_shop_n"
+            android:layout_alignTop="@id/iv_shopDetails_type"
+            android:gravity="top"
+            />
+        <Button
+            android:id="@+id/b_shopDetails_button"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@id/tv_shopDetails_shopName"
+            android:layout_alignParentRight="true"
+            android:text="@string/jia"
+            android:background="@drawable/details_button_selector"
+            android:textSize="@dimen/tv_shop_name"
+            android:textColor="@color/colorMainTitle"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/tv_shop_marleft"
+
+            android:layout_toLeftOf="@id/b_shopDetails_button"
+
+
+            android:layout_alignTop="@id/tv_shopDetails_shopName"
+            >
+
+            <TextView
+                android:id="@+id/tv_shopDetails_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:textColor="@color/colorrorshopDetails"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:id="@+id/tv_shopDetails_distanceNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/rg_main_padding"
+                android:layout_toRightOf="@id/tv_shopDetails_distance"
+                android:text="3.5"
+                android:textColor="@color/colorrorshopDetails"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_shopDetails_distanceNum"
+                android:text="@string/km"
+                android:textColor="@color/colorrorshopDetails"
+                android:textSize="@dimen/tv_shop_size"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_shopDetails_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shopDetails_shopName"
+            android:layout_marginTop="@dimen/tv_main_qu"
+            android:layout_alignLeft="@id/tv_shopDetails_shopName"
+            android:layout_toLeftOf="@id/b_shopDetails_button"
+            android:text="北京市海淀区清河中街68号五彩城购物中心清"
+            android:textColor="@color/colorrorshop"
+            android:textSize="@dimen/tv_shop_size"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shopDetails_address"
+            android:layout_marginTop="@dimen/tv_shop_marleft"
+            android:layout_toRightOf="@id/iv_shopDetails_type"
+            android:text="为了保障您的权益，到店消费后请主动要求商户记录您的BUYER ID"
+            android:textColor="@color/colorshophint"
+            android:textSize="@dimen/tv_shop_s"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/colornewsline"
+        />
+    <ImageView
+        android:layout_marginTop="@dimen/tv_shop_mar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/colornewsline"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tv_shop_marleft"
+        android:gravity="center_vertical"
+        android:background="@color/colorMain"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺推荐"
+            android:textColor="@color/colorshopname"
+            android:textSize="@dimen/tv_shop_n"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xiangsu"
+        android:background="@color/colornewsline"
+        />
+</LinearLayout>

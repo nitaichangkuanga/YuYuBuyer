@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wushuikeji.www.yuyubuyer.activity.GuideActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide_pages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/ll_guide_h">
+
+        <LinearLayout
+            android:id="@+id/ll_guide_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_guide_input"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/b_guide_marginB"
+        android:paddingTop="@dimen/b_guide_top"
+        android:paddingBottom="@dimen/b_guide_top"
+        android:paddingLeft="@dimen/b_guide_left"
+        android:paddingRight="@dimen/b_guide_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

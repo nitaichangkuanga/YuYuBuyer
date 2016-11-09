@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:visibility="visible"
+              android:id="@+id/ll_mainshop_loadMore"
+    >
+    <ProgressBar
+        android:id="@+id/pb_mainshop_progressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/login_button"
+        android:layout_marginTop="@dimen/login_button" />
+
+    <TextView
+        android:id="@+id/tv_mainshop_loadMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_shop_mar"
+        android:text="@string/loadMore"
+        android:textSize="@dimen/tv_shop_size"
+        android:textColor="@color/colorshopname"/>
+
+</LinearLayout>

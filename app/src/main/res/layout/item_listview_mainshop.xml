@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+    >
+    <RelativeLayout
+        android:id="@+id/rl_shop_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tv_main_qu"
+        >
+        <ImageView
+            android:id="@+id/iv_itemListViewShop_img"
+            android:layout_width="@dimen/item_shop_w"
+            android:layout_height="@dimen/item_shop_h"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/tv_itemListViewShop_shopName"
+            android:layout_marginLeft="@dimen/tv_main_qu"
+            android:layout_toRightOf="@id/iv_itemListViewShop_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/shop_shop"
+            />
+
+        <TextView
+            android:id="@+id/tv_itemListViewShop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tv_main_qu"
+            android:layout_toRightOf="@id/tv_itemListViewShop_shopName"
+            android:text="@string/item_shop_shopname"
+            android:textColor="@color/colorshopname"
+            android:textSize="@dimen/tv_shop_n"
+            android:layout_alignTop="@id/iv_itemListViewShop_img"
+            android:gravity="top"
+            />
+
+        <TextView
+            android:id="@+id/tv_iv_itemListViewShop_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_itemListViewShop_shopName"
+            android:layout_marginLeft="@dimen/tv_main_qu"
+            android:layout_marginTop="@dimen/tv_shop_martop"
+            android:layout_toRightOf="@id/iv_itemListViewShop_img"
+            android:text="@string/item_shop_address"
+            android:textColor="@color/colorshophint"
+            android:textSize="@dimen/tv_shop_s"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/tv_iv_itemListViewShop_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_itemListViewShop_img"
+            android:layout_below="@id/tv_iv_itemListViewShop_address"
+            android:layout_marginBottom="@dimen/tv_shop_marbom"
+            android:layout_marginLeft="@dimen/tv_main_qu"
+            android:layout_toRightOf="@id/iv_itemListViewShop_img"
+            android:gravity="bottom"
+            android:text="0"
+            android:textColor="@color/colordiscount"
+            android:textSize="@dimen/tv_shop_t"
+            />
+
+        <TextView
+            android:id="@+id/tv_iv_itemListViewShop_zhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_itemListViewShop_img"
+            android:layout_below="@id/tv_iv_itemListViewShop_address"
+            android:layout_toRightOf="@id/tv_iv_itemListViewShop_num"
+            android:gravity="bottom"
+            android:text="@string/zhe"
+            android:textColor="@color/colorshopname"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_itemListViewShop_img"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_iv_itemListViewShop_address"
+            android:layout_toRightOf="@id/tv_iv_itemListViewShop_zhe"
+            android:gravity="bottom|right"
+            >
+
+            <TextView
+                android:id="@+id/tv_iv_itemListViewShop_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:textColor="@color/colordistance"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:id="@+id/tv_itemListViewShop_distanceNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/rg_main_padding"
+                android:layout_toRightOf="@id/tv_iv_itemListViewShop_distance"
+                android:text="1000m"
+                android:textColor="@color/colordistance"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@id/tv_itemListViewShop_distanceNum"-->
+                <!--android:text="@string/km"-->
+                <!--android:textColor="@color/colordistance"-->
+                <!--android:textSize="@dimen/tv_shop_size"-->
+                <!--/>-->
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@id/rl_shop_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/colornewsline"
+        />
+</RelativeLayout>

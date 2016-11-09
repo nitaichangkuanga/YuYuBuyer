@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_systemInfo_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_mainshop_h"
+        android:background="@color/colorMainTitle"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_systemInfo_back"
+            android:layout_width="@dimen/click_login_top"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/tv_shop_marleft"
+                android:background="@drawable/back_selector"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="系统消息"
+            android:textColor="@color/colorMain"
+            android:textSize="@dimen/tv_shop_name"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_systemInfo_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据"
+        android:textColor="@color/colordistance"
+        android:visibility="gone"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/pb_systemLoading_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <com.wushuikeji.www.yuyubuyer.mylibrary.PullToRefreshSwipeMenuListView
+        android:id="@+id/systemInfo_listView"
+        android:visibility="gone"
+        android:layout_below="@id/rl_systemInfo_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:cacheColorHint="#00000000"
+        android:scrollbarThumbVertical="@mipmap/ui_shuxian"/>
+</RelativeLayout>

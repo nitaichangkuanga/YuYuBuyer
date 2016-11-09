@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tv_shop_mar"
+        android:background="@drawable/listview_selector"
+        >
+        <TextView
+            android:id="@+id/item_selectCity_cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_t"
+            />
+    </RelativeLayout>
+</LinearLayout>

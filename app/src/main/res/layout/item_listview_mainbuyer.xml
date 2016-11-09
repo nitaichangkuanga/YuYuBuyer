@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_buyer_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/rg_main_padding"
+        android:paddingRight="@dimen/rg_main_padding"
+        android:paddingLeft="@dimen/rg_main_padding"
+        android:paddingBottom="@dimen/rg_main_padding"
+        android:background="@drawable/listview_selector"
+        >
+        <ImageView
+            android:id="@+id/iv_itemListViewBuyer_img"
+            android:layout_width="73dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/zanwutupian"
+            />
+        <ImageView
+            android:id="@+id/iv_mainBuyer_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/buyerdetails_v1"
+            android:layout_alignTop="@id/iv_itemListViewBuyer_img"
+            android:layout_marginLeft="@dimen/tv_shop_marleft"
+            android:layout_toRightOf="@id/iv_itemListViewBuyer_img"
+            />
+
+        <TextView
+            android:id="@+id/tv_buyer_sui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/iv_personal_ivh"
+            android:layout_alignParentRight="true"
+            android:text="岁"
+            android:textColor="@color/colorshopname"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_itemListViewBuyer_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_buyer_sui"
+            android:textColor="@color/colorshopname"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <ImageView
+            android:id="@+id/iv_buyer_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/tv_shop_marleft"
+            android:layout_toLeftOf="@id/tv_itemListViewBuyer_age"
+            />
+
+        <TextView
+            android:id="@+id/tv_itemListViewBuyer_buyerName"
+            android:layout_marginLeft="@dimen/tv_shop_marleft"
+            android:layout_toRightOf="@id/iv_mainBuyer_grade"
+            android:layout_toLeftOf="@id/iv_buyer_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/colorshopname"
+            android:textSize="@dimen/tv_shop_t"
+            />
+
+        <ImageView
+            android:id="@+id/iv_buyer_xingxing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/camera"
+            android:layout_alignBottom="@id/iv_itemListViewBuyer_img"
+            android:layout_alignLeft="@id/iv_mainBuyer_grade"
+            />
+        <TextView
+            android:id="@+id/tv_iv_itemListViewBuyer_motto"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_itemListViewBuyer_buyerName"
+            android:layout_alignLeft="@id/iv_mainBuyer_grade"
+            android:layout_above="@id/iv_buyer_xingxing"
+            android:layout_toRightOf="@id/iv_itemListViewBuyer_img"
+            android:textColor="@color/colorshophint"
+            android:textSize="@dimen/tv_shop_s"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_itemListViewBuyer_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/b_reg"
+            android:gravity="right"
+            >
+
+            <TextView
+                android:id="@+id/tv_iv_itemListViewBuyer_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:textColor="@color/colordistance"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:id="@+id/tv_itemListViewBuyer_distanceNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/rg_main_padding"
+                android:layout_toRightOf="@id/tv_iv_itemListViewBuyer_distance"
+                android:textColor="@color/colordistance"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@id/tv_itemListViewBuyer_distanceNum"-->
+                <!--android:text="@string/km"-->
+                <!--android:textColor="@color/colordistance"-->
+                <!--android:textSize="@dimen/tv_shop_size"-->
+                <!--/>-->
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@id/rl_buyer_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xiangsu"
+        android:background="@color/colornewsline"
+        />
+
+</RelativeLayout>

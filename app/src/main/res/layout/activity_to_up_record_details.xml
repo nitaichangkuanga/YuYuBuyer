@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_toUpRecordDetails_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_mainshop_h"
+        android:background="@color/colorMainTitle"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_toUpRecordDetails_back"
+            android:layout_width="@dimen/click_login_top"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/tv_shop_marleft"
+                android:background="@drawable/back_selector"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="充值详情"
+            android:textColor="@color/colorMain"
+            android:textSize="@dimen/tv_shop_name"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_toUpRecordDetails_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:padding="@dimen/tv_shop_med"
+        >
+
+        <TextView
+            android:id="@+id/tv_toUpRecordDetails_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类"
+            android:textColor="@color/colorregister"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_toUpRecordDetails_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_toUpRecordDetails_id"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="型"
+            android:textColor="@color/colorregister"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_toUpRecordDetails_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_toUpRecordDetails_shou"
+            android:layout_below="@id/tv_toUpRecordDetails_id"
+            android:layout_marginTop="@dimen/tv_main_qu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收"
+            android:textColor="@color/colorregister"
+            android:textSize="@dimen/tv_shop_size"
+            />
+        <TextView
+            android:id="@+id/tv_toUpRecordDetails_ru"
+            android:layout_alignTop="@id/tv_toUpRecordDetails_shou"
+            android:layout_alignLeft="@id/tv_toUpRecordDetails_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入"
+            android:textColor="@color/colorregister"
+            android:textSize="@dimen/tv_shop_size"
+            />
+        <TextView
+            android:id="@+id/tv_toUpRecordDetails_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_toUpRecordDetails_shou"
+            android:textColor="@color/colorMainTitle"
+            android:textSize="@dimen/tv_shop_size"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_upto_line"
+        android:layout_marginLeft="@dimen/tv_shop_med"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/colornewsline"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_toup_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:padding="@dimen/tv_shop_med"
+        >
+
+        <TextView
+            android:id="@+id/tv_upto_dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="充值时间"
+            android:textColor="@color/colorregister"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_toup_dateAndtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_toup_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:paddingLeft="@dimen/tv_shop_med"
+        android:paddingRight="@dimen/tv_shop_med"
+        >
+
+        <TextView
+            android:id="@+id/tv_upto_fang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="充值方式"
+            android:textColor="@color/colorregister"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_toupp_payType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_toup_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:padding="@dimen/tv_shop_med"
+        >
+
+        <TextView
+            android:id="@+id/tv_uptoj_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="支付号"
+            android:textColor="@color/colorregister"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_toup_payNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_toup_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:paddingLeft="@dimen/tv_shop_med"
+        android:paddingRight="@dimen/tv_shop_med"
+        >
+
+        <TextView
+            android:id="@+id/tv_upto_te"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="订单号"
+            android:textColor="@color/colorregister"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_toup_orderNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_shop_med"
+        android:background="@color/colorMain"
+        />
+    <ProgressBar
+        android:id="@+id/pb_toupDetails_loading"
+        android:layout_marginTop="@dimen/b_guide_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+</LinearLayout>

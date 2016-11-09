@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/popupwindow"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:background="@drawable/shape_popupwindow"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="选取"
+            android:textColor="@color/colorregister"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_horizontal"
+            android:text="选择图片方式"
+            android:textColor="@color/colorregister"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e8e8e8" />
+
+        <TextView
+            android:id="@+id/tv_popupwindow_picKu"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="图片库"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@color/text_piccolor_selector"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e8e8e8" />
+
+        <TextView
+            android:id="@+id/tv_popupwindow_pic"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="拍照"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@color/text_piccolor_selector"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:background="#f0f0f0"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_popupwindow_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_popupwindow"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/text_piccolor_selector"
+        android:textSize="16sp" />
+
+</LinearLayout>

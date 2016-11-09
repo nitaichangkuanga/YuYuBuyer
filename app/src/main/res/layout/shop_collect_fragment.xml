@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+    >
+
+    <TextView
+        android:id="@+id/tv_shopCollect_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据"
+        android:textColor="@color/colordistance"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/pb_shopCollectLoading_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <com.wushuikeji.www.yuyubuyer.mylibrary.PullToRefreshSwipeMenuListView
+        android:id="@+id/shopCollect_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@mipmap/ui_shuxian"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

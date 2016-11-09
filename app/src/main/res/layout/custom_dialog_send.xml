@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_popupwindow"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_send_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="您今天已经发布过一条动态"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e8e8e8"/>
+
+        <TextView
+            android:id="@+id/tv_send_ok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="ok"
+            android:textColor="@color/text_piccolor_selector"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

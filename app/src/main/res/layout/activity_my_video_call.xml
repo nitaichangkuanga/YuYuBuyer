@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:animateLayoutChanges="true"
+            >
+
+            <ImageView
+                android:id="@+id/ib_myVideo_requestImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                />
+
+            <com.hyphenate.media.EMOppositeSurfaceView
+                android:id="@+id/opposite_surface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <!--buyer的money信息-->
+            <!--start-->
+            <RelativeLayout
+                android:id="@+id/rl_myVideo_buyerMoneyInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:visibility="gone"
+                >
+
+                <com.wushuikeji.www.yuyubuyer.view.RoundedCornerImageView
+                    android:id="@+id/iv_buyerMoneyInfo_head"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/zanwutupian"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_buyerMoneyInfo_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tv_shop_marbom"
+                    android:layout_marginLeft="@dimen/tv_shop_marleft"
+                    android:layout_toRightOf="@id/iv_buyerMoneyInfo_head"
+                    android:src="@mipmap/buyerdetails_v1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_buyerMoneyInfo_buyerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_buyerMoneyInfo_grade"
+                    android:layout_marginLeft="@dimen/product"
+                    android:layout_toRightOf="@id/iv_buyerMoneyInfo_grade"
+                    android:text="半夏微凉"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/tv_shop_t"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_buyerMoneyInfo_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_buyerMoneyInfo_grade"
+                    android:layout_marginLeft="@dimen/tv_shop_med"
+                    android:layout_toRightOf="@id/tv_buyerMoneyInfo_buyerName"
+                    android:src="@mipmap/girl"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_buyerMoneyInfo_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/product"
+                    android:layout_toRightOf="@id/iv_buyerMoneyInfo_sex"
+                    android:text="18"
+                    android:layout_alignTop="@id/iv_buyerMoneyInfo_grade"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/tv_shop_size"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_buyerMoneyInfo_age"
+                    android:text="岁"
+                    android:layout_alignTop="@id/iv_buyerMoneyInfo_grade"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/tv_shop_size"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_buyerMoneyInfo_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_buyerMoneyInfo_head"
+                    android:layout_alignLeft="@id/iv_buyerMoneyInfo_grade"
+                    android:layout_marginBottom="@dimen/tv_shop_marbom"
+                    android:text="通话:"
+                    android:gravity="bottom"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/tv_shop_s"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_buyerMoneyInfo_callMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_buyerMoneyInfo_call"
+                    android:layout_alignTop="@id/tv_buyerMoneyInfo_call"
+                    android:layout_marginLeft="@dimen/iv_personal_h"
+                    android:layout_toRightOf="@id/tv_buyerMoneyInfo_call"
+                    android:text="￥40/小时"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/tv_shop_s"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_buyerMoneyInfo_shopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_buyerMoneyInfo_call"
+                    android:layout_alignTop="@id/tv_buyerMoneyInfo_call"
+                    android:layout_marginLeft="@dimen/tv_shop_marleft"
+                    android:layout_toRightOf="@id/tv_buyerMoneyInfo_callMoney"
+                    android:text="陪逛:"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/tv_shop_s"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_buyerMoneyInfo_shoppingMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_buyerMoneyInfo_call"
+                    android:layout_alignTop="@id/tv_buyerMoneyInfo_call"
+                    android:layout_marginLeft="@dimen/iv_personal_h"
+                    android:layout_toRightOf="@id/tv_buyerMoneyInfo_shopping"
+                    android:text="￥100/小时"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/tv_shop_s"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_buyerMoneyInfo_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/iv_buyerMoneyInfo_grade"
+                    android:layout_below="@id/iv_buyerMoneyInfo_grade"
+                    android:layout_above="@id/tv_buyerMoneyInfo_call"
+                    android:gravity="center"
+                    android:text="所属商圈:"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/tv_shop_s"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_buyerMoneyInfo_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_buyerMoneyInfo_sub"
+                    android:layout_marginLeft="@dimen/iv_personal_ivh"
+                    android:layout_toRightOf="@id/tv_buyerMoneyInfo_sub"
+                    android:layout_above="@id/tv_buyerMoneyInfo_call"
+                    android:gravity="center"
+                    android:text="成都"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/tv_shop_s"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_buyerMoneyInfo_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_buyerMoneyInfo_sub"
+                    android:layout_marginLeft="@dimen/iv_personal_ivh"
+                    android:layout_toRightOf="@id/tv_buyerMoneyInfo_city"
+                    android:text="盐市口商圈"
+                    android:layout_above="@id/tv_buyerMoneyInfo_call"
+                    android:gravity="center"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/tv_shop_s"
+                    />
+            </RelativeLayout>
+            <!--end-->
+
+            <ImageButton
+                android:id="@+id/ib_myVideo_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/tv_main_qu"
+                android:layout_marginTop="@dimen/tv_shop_marleft"
+                android:background="@null"
+                android:src="@mipmap/close"
+                android:visibility="gone"
+                />
+
+            <RelativeLayout
+                android:id="@+id/ll_btns"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/tv_call_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="邀请你视频通话"
+                    android:textColor="@color/colorMain"
+                    android:textSize="14sp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_call_state"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/tv_main_qu"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_myVideo_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_above="@id/tv_nick"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/tv_main_qu"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/zanwutupian"
+                    />
+                <!--预看自己-->
+                <com.hyphenate.media.EMLocalSurfaceView
+                    android:id="@+id/local_surface"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_alignBottom="@id/iv_myVideo_img"
+                    android:layout_marginRight="@dimen/iv_personal_ivh"
+                    android:layout_toRightOf="@id/iv_myVideo_img"
+                    android:visibility="gone"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_call_state"
+                    android:layout_marginTop="@dimen/ll_guide_h"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btn_hangup_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:src="@mipmap/hangup"
+                        android:visibility="invisible"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_coming_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/btn_refuse_call"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:src="@mipmap/refuse"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/btn_answer_call"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:src="@mipmap/answer"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_myVideo_timeDisplay"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginBottom="@dimen/tv_main_qu"-->
+            <!--android:layout_marginRight="@dimen/tv_main_qu"-->
+            <!--android:text="0"-->
+            <!--android:textColor="@color/colorMain"-->
+            <!--android:textSize="@dimen/tv_shop_size"-->
+            <!--/>-->
+            <Chronometer
+                android:id="@+id/ct_myVideo_chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/tv_main_qu"
+                android:layout_marginRight="@dimen/tv_main_qu"
+                android:textColor="@color/colorMain"
+                android:textSize="@dimen/tv_shop_size"/>
+        </RelativeLayout>
+
+
+        <ProgressBar
+            android:id="@+id/myVideo_ProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorCustomProgressBar"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/iv_h"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorB"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_myVideo_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:visibility="visible"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_myVideo_inputRelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_myVideo_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/input_up"
+                        />
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:layout_width="@dimen/stroke_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/colornewsline"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_myVideo_t"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="视频续时"
+                    android:textColor="@color/colorrVideo"
+                    android:textSize="@dimen/tv_shop_size"
+                    />
+
+
+                <ImageView
+                    android:layout_width="@dimen/stroke_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/colornewsline"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_myVideo_bootMattention"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="预约陪逛"
+                    android:textColor="@color/colorrVideo"
+                    android:textSize="@dimen/tv_shop_size"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/stroke_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/colornewsline"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_myVideo_report"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="举报"
+                    android:textColor="@color/text_redcolor_selector"
+                    android:textSize="@dimen/tv_shop_size"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_myVideo_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_myVideo_afterInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_myVideo_inputDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/input_down"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/stroke_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/colornewsline"
+                    />
+
+                <EditText
+                    android:id="@+id/et_myVideo_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tv_main_qu"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_edit_shap"
+                    android:hint="请输入内容"
+                    android:padding="@dimen/tv_shop_mar"
+                    android:textColor="@color/colorloginreg"
+                    android:textColorHint="@color/colorloginhint"
+                    android:textSize="@dimen/tv_shop_size"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/emo"
+                        />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/b_myVideo_send"
+                    android:layout_width="50dp"
+                    android:layout_height="33dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/tv_main_qu"
+                    android:background="@drawable/input_button_shap"
+                    android:text="发送"
+                    android:textColor="@color/text_sendcolor_selector"
+                    android:textSize="@dimen/tv_shop_size"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_myVideo_chatLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/popupwindow_bg"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_myVideo_freeDisply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/call_shap"
+            android:text="已进入十分钟免费通话"
+            android:textColor="@color/colorMain"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <ListView
+            android:id="@+id/lv_myVideo_chatListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_myVideo_freeDisply"
+            android:layout_marginTop="6dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@mipmap/ui_shuxian"
+            />
+    </RelativeLayout>
+</RelativeLayout>

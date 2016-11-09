@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_friendInfo_rll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_mainshop_h"
+        android:background="@color/colorMainTitle"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_friendinfo_back"
+            android:layout_width="@dimen/click_login_top"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/tv_shop_marleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_selector"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="好友消息"
+            android:textColor="@color/colorMain"
+            android:textSize="@dimen/tv_shop_n"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_friendinfo_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂时没有好友信息"
+        android:textColor="@color/colordistance"
+        android:visibility="gone"
+        android:textSize="18sp" />
+
+    <com.wushuikeji.www.yuyubuyer.view.CircularProgress
+        android:id="@+id/pb_friendLoading_progressBar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:borderWidth="5dp"
+        />
+<LinearLayout
+    android:id="@+id/ll_friendInfo_llf"
+    android:layout_below="@id/rl_friendInfo_rll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorrorderTime"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <com.wushuikeji.www.yuyubuyer.view.ClearEditText
+        android:id="@+id/et_friendInfo_head"
+        android:layout_marginTop="@dimen/iv_personal_ivh"
+        android:layout_marginBottom="@dimen/iv_personal_ivh"
+        android:layout_marginRight="@dimen/tv_shop_marleft"
+        android:layout_marginLeft="@dimen/tv_shop_marleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shap"
+        android:drawableLeft="@mipmap/search"
+        android:padding="@dimen/iv_personal_ivh"
+        android:singleLine="true"
+        android:drawablePadding="@dimen/tv_shop_martop"
+        android:hint="搜索好友"
+        android:textColorHint="@color/colorshophint"
+        android:textColor="@color/colorloginreg"
+        android:textSize="@dimen/tv_shop_size"
+        />
+</LinearLayout>
+
+    <com.wushuikeji.www.yuyubuyer.mylibrary.PullToRefreshSwipeMenuListView
+        android:id="@+id/friendinfo_listView"
+        android:layout_below="@id/ll_friendInfo_llf"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:cacheColorHint="#00000000"
+        android:scrollbarThumbVertical="@mipmap/ui_shuxian"
+         />
+</RelativeLayout>

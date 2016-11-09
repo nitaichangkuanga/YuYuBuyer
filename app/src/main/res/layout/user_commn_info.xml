@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_common_llone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/tv_shop_mar"
+        android:background="@color/colorMain"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_commomInfo_attentionLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/commonInfo_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textColor="@color/colorpoptitle"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/attention"
+                android:textColor="@color/text_common_selector"
+                android:textSize="@dimen/tv_shop_s"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/stroke_width"
+            android:layout_height="@dimen/ll_guide_h"
+            android:background="@color/colornewsline"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_commomInfo_fansLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/commonInfo_fanInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textColor="@color/colorpoptitle"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fans"
+                android:textColor="@color/text_common_selector"
+                android:textSize="@dimen/tv_shop_s"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/stroke_width"
+            android:layout_height="@dimen/ll_guide_h"
+            android:background="@color/colornewsline"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_commomInfo_friendLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/commonInfo_friendInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textColor="@color/colorpoptitle"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_friend"
+                android:textColor="@color/text_common_selector"
+                android:textSize="@dimen/tv_shop_s"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/colornewsline"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_common_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/tv_shop_mar"
+        android:background="@color/colorMain"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/commonInfo_onlineTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/colorpoptitle"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_line"
+                android:textColor="@color/text_common_selector"
+                android:textSize="@dimen/tv_shop_s"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/stroke_width"
+            android:layout_height="@dimen/ll_guide_h"
+            android:background="@color/colornewsline"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/commonInfo_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textColor="@color/colorpoptitle"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ordercount"
+                android:textColor="@color/text_common_selector"
+                android:textSize="@dimen/tv_shop_s"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/stroke_width"
+            android:layout_height="@dimen/ll_guide_h"
+            android:background="@color/colornewsline"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/commonInfo_xin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textColor="@color/colorpoptitle"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_credit"
+                android:textColor="@color/text_common_selector"
+                android:textSize="@dimen/tv_shop_s"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/colornewsline"
+        />
+
+</LinearLayout>

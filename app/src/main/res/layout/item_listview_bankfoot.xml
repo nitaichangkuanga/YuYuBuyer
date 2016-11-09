@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_bank_addBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/personal_selector"
+        android:paddingBottom="@dimen/iv_personal_h"
+        android:paddingRight="@dimen/tv_shop_mar"
+        android:paddingTop="@dimen/iv_personal_h">
+
+        <ImageView
+            android:id="@+id/iv_bank_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tv_shop_marleft"
+            android:src="@mipmap/bank_add"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tv_main_qu"
+            android:layout_toRightOf="@id/iv_bank_img"
+            android:text="添加银行卡"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <ImageView
+            android:id="@+id/iv_bank_toimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/tv_shop_marleft"
+            android:src="@mipmap/enter"
+            />
+    </RelativeLayout>
+</LinearLayout>

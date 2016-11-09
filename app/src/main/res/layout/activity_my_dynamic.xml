@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_md_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_mainshop_h"
+        android:background="@color/colorMainTitle"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_md_back"
+            android:layout_width="@dimen/click_login_top"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/tv_shop_marleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_selector"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动态列表"
+            android:textSize="@dimen/tv_shop_name"
+            android:textColor="@color/colorMain"
+            android:layout_centerInParent="true"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_md_add"
+            android:layout_width="@dimen/click_login_top"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/ib_myDynamic_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/tv_shop_mar"
+            />
+        </RelativeLayout>
+        <!--<ImageView-->
+            <!--android:layout_toLeftOf="@id/ib_myDynamic_add"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/et_login"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/delete"-->
+            <!--/>-->
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_md_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+    <com.wushuikeji.www.yuyubuyer.mylibrary.PullToRefreshSwipeMenuListView
+        android:id="@+id/md_listView"
+        android:layout_below="@id/rl_md_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:cacheColorHint="#00000000"
+        android:scrollbarThumbVertical="@mipmap/ui_shuxian"
+        />
+    <!--android:scrollbarThumbVertical="@mipmap/ui_shuxian"-->
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+                android:background="@color/colorrorderTime"
+
+    >
+    <!--android:focusable="true"-->
+    <!--android:focusableInTouchMode="true"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_main_qu"
+        android:layout_marginBottom="@dimen/tv_main_qu"
+        android:layout_marginRight="@dimen/tv_shop_mar"
+        android:layout_marginLeft="@dimen/tv_shop_mar"
+        android:layout_centerVertical="true"
+        >
+        <EditText
+            android:id="@+id/head_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shap"
+            android:drawableLeft="@mipmap/search"
+            android:padding="@dimen/tv_main_qu"
+            android:singleLine="true"
+            android:drawablePadding="@dimen/tv_shop_martop"
+            android:hint="BUYER ID/昵称"
+            android:textColorHint="@color/colorshophint"
+            android:textColor="@color/colorloginreg"
+            android:textSize="@dimen/tv_shop_size"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_mainHead_rlDeleteimg"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_alignRight="@id/head_editText"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:id="@+id/ib_mainHead_deleteimg"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:src="@mipmap/delete_video"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

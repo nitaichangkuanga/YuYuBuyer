@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_sysytem_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tv_shop_marleft"
+        android:background="@drawable/listview_selector"
+        >
+        <ImageView
+            android:id="@+id/iv_sysytem_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/system"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_system_ll"
+            android:layout_toRightOf="@id/iv_sysytem_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tv_main_qu"
+            >
+            <TextView
+                android:id="@+id/tv_sysytem_sysytemInfo"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="系统消息"
+                android:singleLine="true"
+                android:textColor="@color/colorrorder"
+                android:textSize="@dimen/tv_shop_size"
+                />
+
+            <TextView
+                android:id="@+id/tv_sysytem_dateAndTime"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorregister"
+                android:textSize="@dimen/tv_shop_size"
+                android:gravity="right"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_sysytem_content"
+            android:layout_alignLeft="@id/ll_system_ll"
+            android:layout_alignBottom="@id/iv_sysytem_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorroruserin"
+            android:textSize="@dimen/tv_shop_s"
+            android:singleLine="true"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xiangsu"
+        android:background="@color/colornewsline"
+        />
+</LinearLayout>

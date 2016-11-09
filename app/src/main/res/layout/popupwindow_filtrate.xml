@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorMain"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tv_shop_marleft"
+        android:layout_marginLeft="@dimen/tv_shop_marleft"
+        android:layout_marginTop="@dimen/rg_main_padding"
+        >
+
+        <TextView
+            android:id="@+id/tv_pop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/rg_main_padding"
+            android:text="@string/server"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioGroup
+            android:id="@+id/rg_popFiltrate_server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pop_name"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_popFiltrate_serverOne"
+                style="@style/radioButtonchoicePopupwindowStyle"
+                android:text="@string/buxian"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_popFiltrate_serverTwo"
+                style="@style/radioButtonchoicePopupwindowStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/movie"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_popFiltrate_serverThree"
+                style="@style/radioButtonchoicePopupwindowStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/lineB"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/colornewsline"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tv_shop_marleft"
+        android:layout_marginLeft="@dimen/tv_shop_marleft"
+        android:layout_marginTop="@dimen/rg_main_padding"
+        >
+
+        <TextView
+            android:id="@+id/tv_pop_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/rg_main_padding"
+            android:text="@string/sex"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_popFiltrate_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pop_sex"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_popFiltrate_sexOne"
+                style="@style/radioButtonchoicePopupwindowStyle"
+                android:text="@string/buxian"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_popFiltrate_sexTwo"
+                style="@style/radioButtonchoicePopupwindowStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/man"/>
+
+            <RadioButton
+                android:id="@+id/rb_popFiltrate_sexThree"
+                style="@style/radioButtonchoicePopupwindowStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/women"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/colornewsline"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tv_shop_marleft"
+        android:layout_marginLeft="@dimen/tv_shop_marleft"
+        android:layout_marginTop="@dimen/rg_main_padding"
+        >
+
+        <TextView
+            android:id="@+id/tv_pop_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/rg_main_padding"
+            android:text="@string/status"
+            android:textColor="@color/colorpoptitle"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_popFiltrate_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pop_status"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_popFiltrate_StatusOne"
+                style="@style/radioButtonchoicePopupwindowStyle"
+                android:text="@string/buxian"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_popFiltrate_statusTwo"
+                style="@style/radioButtonchoicePopupwindowStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/kongxian"/>
+
+            <RadioButton
+                android:id="@+id/rb_popFiltrate_statusThree"
+                style="@style/radioButtonchoicePopupwindowStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/busy"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorpopBg"
+        android:padding="@dimen/tv_shop_marleft"
+        >
+
+        <TextView
+            android:id="@+id/tv_pop_reset"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/popupwindow_shap"
+            android:text="@string/reset"
+            android:padding="@dimen/tv_shop_marleft"
+            android:textColor="@color/text_blackcolor_selector"
+            android:textSize="@dimen/tv_shop_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_pop_decided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="@dimen/tv_shop_marleft"
+            android:background="@drawable/login_button_shap"
+            android:text="@string/decided"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/tv_shop_size"
+            />
+    </RelativeLayout>
+</LinearLayout>
